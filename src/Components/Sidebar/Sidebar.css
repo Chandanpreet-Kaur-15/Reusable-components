@@ -1,0 +1,38 @@
+.sidebar{
+    background: #fff;
+    /* background: grey; */
+    width: 25%;
+    border-right: 2px solid rgb(228, 224, 224);
+}
+.sidebar-content{
+    padding: 0 20px;
+}
+.side-content-1 p, .deals p{
+    padding-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.deals{
+    cursor: pointer;
+}
+.padding-top{
+    padding-top: 15px;
+}
+.side-brands div, .pay div{
+    margin-top: 7px;
+}
+.side-brands input, .pay input, .available input{
+    height: 20px;
+    width: 18px;
+}
+.side-review img{
+    height: 15px;
+    width: 17px;
+}
+.side-review p:hover span{
+    color: rgb(199, 149, 22);
+    cursor: pointer;
+}
+.deals p:hover{
+    color: rgb(199, 149, 22);
+}

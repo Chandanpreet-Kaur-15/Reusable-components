@@ -1,0 +1,97 @@
+.Card{
+    display: flex;
+    justify-content: flex-start;
+}
+.card-article{
+    position: relative;
+    overflow: hidden;
+}
+.card-article img{
+    height: 300px;
+    width: 230px;
+    border-radius: 1.5rem;
+}
+.card-text{
+    width: 190px;
+    background-color: #fff;
+    padding: 1rem 1rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    transition: opacity 1s 1s;
+}
+.card-desc{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: .25rem;
+}
+.card-title{
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+}
+.card-button{
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    color: var(--first-color);
+}
+.card-button img{
+    height: 15px;
+    width: 17px;
+}
+.card-button:hover{
+    text-decoration: underline;
+}
+.card-article:hover .card-text{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .1s;
+}
+.card-article:hover{
+    animation: remove-overflow 2s forwards;
+}
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+.card-article:not(:hover) .card-data{
+    animation: remove-data 1s forwards;
+}
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow{
+    0%{
+        overflow: initial;
+    }
+    50%{
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,23 @@
+.price-slider div{
+    font-size: 14px;
+}
+.price-slider input{
+    height: 1.5rem;
+    width: 6rem;
+}
+.price-slider button{
+    margin-left: 5px;
+    width: 4rem;
+    height: 1.5rem;
+}
+
+.price-slider button{
+    border: 1px solid rgb(228, 224, 224);
+    /* border: none; */
+    outline: none;
+    border-radius: 5px;
+}
+.price-slider button:hover{
+    background: rgb(24, 168, 212);
+    color: #fff;
+}

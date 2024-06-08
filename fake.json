@@ -1,0 +1,13 @@
+{
+  "weeks": [
+    { "id": 1, "name": "Monday", "year": 1000 },
+    { "id": 2, "name": "Tuesday", "year": 2001 },
+    { "id": 3, "name": "Wednesday", "year": 2002 },
+    { "id": 4, "name": "Thursday", "year": 2003 },
+    { "id": 5, "name": "Friday", "year": 2004 },
+    { "id": 6, "name": "Saturday", "year": 2005 },
+    { "id": 7, "name": "Sunday", "year": 2026 }
+
+  ]
+
+}
